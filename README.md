@@ -1,9 +1,17 @@
+# Pandas Data Slicing and Subsetting Laboratory
+
+A Python-based data manipulation repository demonstrating how to perform positional indexing, label-based slicing, and Boolean filtering on a dataset using the **Pandas** library in Jupyter Notebook.
+
+---
+
 ## Intended Learning Outcomes
 
 * **Load Data:** Read structured CSV datasets into a Pandas DataFrame without altering original files.
 * **Positional & Label Indexing:** Extract subsets of rows and columns using `.iloc[]` and label array indexing.
 * **Boolean Filtering:** Search and query specific records based on column conditions using conditional statements and `.isin()`.
 * **Data Subset Extraction:** Generate targeted DataFrames while preserving source data integrity and row order.
+
+---
 
 ## Dataset Overview
 
@@ -18,12 +26,15 @@ The dataset used is `cars.csv` (based on the classic `mtcars` dataset), which co
 | `wt` | Weight (1000 lbs) |
 | `gear` | Number of forward gears |
 
+---
+
 ## Code Breakdown & Solutions
 
 ### A. Positional and Label-Based Slicing
 
 Demonstrates how to inspect dataset dimensions and perform combination slicing using `.iloc[]` for row indices and column labels for feature selection.
 
+```python
 import pandas as pd
 
 # Load dataset
@@ -38,6 +49,10 @@ cars6to10 = cars.iloc[6:11]
 
 # 3. Display selected columns using label indexing
 display(cars6to10[['Model', 'mpg', 'cyl', 'hp', 'gear']])
+
+```
+
+---
 
 ### B. Model Lookup
 
@@ -82,6 +97,11 @@ print("Shape of selected_cars:", selected_cars.shape)
 * Pandas
 * Jupyter Notebook / JupyterLab
 
+## How to Run
+
+1. Clone this repository.
+2. Ensure `cars.csv` is located in the working directory (or specify the local file path).
+3. Open `solution.ipynb` in Jupyter Notebook and execute all cells sequentially.
 ## How to Run
 
 1. Clone this repository.
