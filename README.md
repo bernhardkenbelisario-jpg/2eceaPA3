@@ -1,9 +1,3 @@
-# Pandas Data Slicing and Subsetting Laboratory
-
-A Python-based data manipulation repository demonstrating how to perform positional indexing, label-based slicing, and Boolean filtering on a dataset using the **Pandas** library in Jupyter Notebook.
-
----
-
 ## Intended Learning Outcomes
 
 * **Load Data:** Read structured CSV datasets into a Pandas DataFrame without altering original files.
@@ -97,11 +91,6 @@ print("Shape of selected_cars:", selected_cars.shape)
 * Pandas
 * Jupyter Notebook / JupyterLab
 
-## How to Run
-
-1. Clone this repository.
-2. Ensure `cars.csv` is located in the working directory (or specify the local file path).
-3. Open `solution.ipynb` in Jupyter Notebook and execute all cells sequentially.
 ## How to Run
 
 1. Clone this repository.
